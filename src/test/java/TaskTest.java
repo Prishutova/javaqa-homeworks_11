@@ -3,13 +3,13 @@ import org.junit.jupiter.api.Test;
 
 public class TaskTest {
 
-   @Test
+    @Test
     public void shouldFindWithTrueTitle() {
         SimpleTask task = new SimpleTask(1, "Сон");
         String query = "Сон";
         boolean expected = true;
         boolean actual = task.matches(query);
-       Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
